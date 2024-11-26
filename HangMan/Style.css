@@ -1,0 +1,212 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    overflow-x: hidden;
+}
+#root{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.hungman{
+    /* background-color: green; */
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.buttons-side{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.blank{
+    height: 25vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-parent{
+    height: 60vh;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* background-color: red; */
+}
+button{
+    background-color: #FAF0CA;
+    border: none;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    color: black;
+    cursor: pointer;
+}
+.blank p{
+    color: white;
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    border-bottom: 4px solid white;
+    margin: 10px;
+    text-align: center;
+}
+.blank span{
+    display: none;
+}
+.greenbtn , .greenbtn:hover{
+    background-color: green;
+    color: white;
+}
+.redbtn , .redbtn:hover{
+    background-color: red;
+    color: black;
+}
+.h-1{
+    position: absolute;
+    height: 2vh;
+    width: 45vw;
+    background-color: white;
+    /* right: 20px; */
+    bottom: 3vh;
+    left: 2vw;
+    z-index: 999;
+    border-radius: 8px;
+    background-image: url('https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29vZGVuJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+}
+.h-2{
+    position: absolute;
+    height: 90vh;
+    width: 1vw;
+    border-radius: 8px;
+    background-image: url('https://images.unsplash.com/photo-1585773818428-b50bebdc2344?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d29vZGVuJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+    left: 4vw;
+    bottom: 4vh;
+    z-index: 10;
+    background-color: #fff;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.dot{
+    height: 6px;
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 2px;
+    margin-top: 15px;
+}
+.h-3{
+    position: absolute;
+    height: 2vh;
+    width: 25vw;
+    border-radius: 8px;
+    left: 3vw;
+    top: 8vh;
+    background-color: #fff;
+    background-image: url('https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29vZGVuJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+}
+.h-4{
+    position: absolute;
+    height: 26vh;
+    width: 1vw;
+    top: 5vh;
+    left: 8vw;
+    border-radius: 8px;
+    background-color: #fff;
+    transform: rotate(40deg);
+    background-image: url('https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29vZGVuJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+}
+.dot1{
+    margin: 2.5px;
+}
+.h-5{
+    position: absolute;
+    background-color: #fff;
+    height: 16vh;
+    width: 0.5vw;
+    left: 25vw;
+    top: 8vh;
+    border-radius: 8px;
+}
+.h-6{
+    position: absolute;
+    background-color: #fff;
+    height: 20vh;
+    width: 20vh;
+    left: 20.3vw;
+    top: 20vh;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 20;
+}
+.h-6 img{
+    height: 20vh;
+    width: 20vh; 
+    /* z-index: 20; */
+}
+.h-7{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 35vh;
+    width: 1vw;
+    left: 24.7vw;
+    top: 30.5vh;
+}
+.h-8{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 15vh;
+    width: 0.5vw;
+    left: 28vw;
+    top: 40vh;
+    transform: rotate(130deg);
+}
+.h-10{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 15vh;
+    width: 0.5vw;
+    left: 22vw;
+    top: 40vh;
+    transform: rotate(-130deg);
+}
+.h-11{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 15vh;
+    width: 0.5vw;
+    left: 22vw;
+    top: 61.5vh;
+    transform: rotate(-130deg);
+}
+.h-9{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 15vh;
+    width: 0.5vw;
+    left: 27.7vw;
+    top: 61.5vh;
+    transform: rotate(130deg);
+}
+.display-none{
+    display: none;
+}
+
+
+
+
+
+
+

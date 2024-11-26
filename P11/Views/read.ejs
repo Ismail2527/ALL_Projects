@@ -1,0 +1,34 @@
+<%- include('./base/header.ejs') %>
+<div class="container">
+  <div class="alert bg-success mt-3">
+    <h4 class="text-center">Read Data</h4>
+  </div>
+</div>
+
+<div class="container">
+  <table class="table text-center">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>email</th>
+        <th>contact</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach((ele) => { %>
+      <tr>
+        <td><%= ele.name %></td>
+        <td><%= ele.city %></td>
+        <td><%= ele.email %></td>
+        <td><%= ele.contact %></td>
+        <td><a href="/edit/<%= ele.id %>">Edit</a></td>
+        <td><a href="/delete/<%= ele.id %>">Delete</a></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+<%- include ('./base/footer.ejs') %>

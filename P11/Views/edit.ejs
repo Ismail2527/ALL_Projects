@@ -1,0 +1,73 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container">
+  <div class="alert bg-success mt-3">
+    <h4 class="text-center">Update Your Account</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <form action="/update/<%= user.id %>" method="POST">
+        <div class="field my-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            name="name"
+            value="<%= user.name %>"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="field my-3">
+          <label for="city" class="form-label">City</label>
+          <input
+            type="text"
+            id="city"
+            class="form-control"
+            name="city"
+            value="<%= user.city %>"
+            placeholder="Enter city"
+            required
+          />
+        </div>
+
+        <div class="field my-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            name="email"
+            value="<%= user.email %>"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="field my-3">
+          <label for="contact" class="form-label">Contact</label>
+          <input
+            type="text"
+            id="contact"
+            class="form-control"
+            name="contact"
+            value="<%= user.contact %>"
+            placeholder="Enter phone number"
+            required
+          />
+        </div>
+
+        <input type="submit" value="Update" class="btn btn-warning w-100" />
+      </form>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+<%- include('./base/footer.ejs') %>
